@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecodesk.InformationBitacoraController">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="212.0" fitWidth="281.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="https://storage.googleapis.com/eco_explore_bucket/eco_explore/658f881a10000ab174a394e7" />
+            </image>
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </ImageView>
+        <Button fx:id="BtnContactarGuía" mnemonicParsing="false" onAction="#ContactarGuia" text="Contactar guía">
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Button>
+        <Label fx:id="LBNombreBitacora" text="Nombre de la bitácora">
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Label>
+        <Label fx:id="LBDescripcion" text="Descripción">
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Label>
+        <HBox alignment="CENTER">
+            <Label fx:id="LBPuntuacion" text="Puntuación">
+            <HBox.margin>
+               <Insets right="20.0" />
+            </HBox.margin></Label>
+            <Label fx:id="LBDificultad" text="Dificultad">
+
+            </Label>
+        </HBox>
+    </children>
+</VBox>
