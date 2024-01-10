@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecodesk.LandingPageController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <HBox alignment="CENTER" spacing="10.0">
+      <TextField id="TFBuscar" prefHeight="25.0" prefWidth="204.0">
+         <HBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </HBox.margin></TextField>
+      <Button mnemonicParsing="false" onAction="#Buscar" text="Buscar" />
+   </HBox>
+   <HBox alignment="CENTER" spacing="10.0">
+      <VBox spacing="10.0">
+         <Label id="LBNombreBitacora" text="Nombre" />
+         <Label id="LBDescripcionBitacora" prefHeight="17.0" prefWidth="313.0" text="Descripción de la bitácora" />
+         <Label id="LBPuntuacionBitacora" prefHeight="17.0" prefWidth="313.0" text="Puntuación" />
+      </VBox>
+      <ImageView id="ImgBitacora" fitHeight="167.0" fitWidth="263.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin></ImageView>
+      <VBox spacing="10.0" />
+   </HBox>
+   <HBox alignment="CENTER" spacing="10.0">
+      <Button id="BTNSIguiente" mnemonicParsing="false" onAction="#Anterior" text="Anterior" />
+      <Button id="BTNSiguiente" mnemonicParsing="false" onAction="#Siguiente" text="Siguiente" />
+      <VBox.margin>
+         <Insets bottom="10.0" top="10.0" />
+      </VBox.margin>
+   </HBox>
+</VBox>
